@@ -1,0 +1,6 @@
+Removi as divs .hero-gradient do index.html para que as bolhas roxas desapareçam. Caso precise restaurar, procure por:
+
+<div class="hero-gradient hero-gradient-1"></div>
+<div class="hero-gradient hero-gradient-2"></div>
+
+Este arquivo é apenas um rastro da alteração (pode apagar depois).

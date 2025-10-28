@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JVix - Transformando Ideias em Realidade Digital</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.490/build/spline-viewer.js"></script>
+</head>
+<body>
+  <!-- Redesigned header with cleaner navigation and toggle switch -->
+  <header class="header-glass">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">JV</span>ix
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="">Início</a></li>
+        <li><a href="">Serviços</a></li>
+        <li><a href="">Projetos</a></li>
+        <li><a href="">Planos</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <!-- Sliding toggle switch for theme instead of button -->
+        <div class="theme-toggle-container">
+          <input type="checkbox" id="themeToggle" class="theme-toggle-checkbox">
+          <label for="themeToggle" class="theme-toggle-label">
+            <span class="theme-toggle-slider"></span>
+          </label>
+        </div>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Redesigned mobile menu with purple glass effect -->
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html">Início</a>
+      <a href="paginas/servicos.html">Serviços</a>
+      <a href="paginas/projetos.html">Projetos</a>
+      <a href="paginas/planos.html">Planos</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <spline-viewer id="splineBackground" url="https://prod.spline.design/6Wq1Q9XvbH5hvxVs/scene.splinecode" background="transparent"></spline-viewer>
+    </div>
+    
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Transformando ideias em
+        <span class="text-gradient"><br>realidade digital</span>
+      </h1>
+      <p class="hero-subtitle">
+        Desenvolvemos soluções web e mobile inovadoras que impulsionam o crescimento do seu negócio
+      </p>
+      <div class="hero-buttons">
+        <a href="paginas/planos.html" class="btn btn-primary">Começar agora</a>
+        <a href="paginas/projetos.html" class="btn btn-secondary">Ver projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redesigned "What we offer" section with numbered cards -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">O que oferecemos</h2>
+      
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-number">1</div>
+          <h3 class="service-title">Desenvolvimento Web</h3>
+          <p class="service-description">
+            Criamos sites e aplicações web modernas, responsivas e otimizadas para SEO, garantindo a melhor experiência para seus usuários.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">2</div>
+          <h3 class="service-title">Cartão de Visita Digital</h3>
+          <p class="service-description">
+            Criamos cartões de visita digitais personalizados no estilo Linktree, com estudo de paleta de cores e tipografia. Cada projeto é feito para refletir a identidade da sua marca, com um design moderno, funcional e profissional.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">3</div>
+          <h3 class="service-title">Google Meu Negócio</h3>
+          <p class="service-description">
+            Cuidamos da criação e otimização do seu perfil no Google Meu Negócio, ajudando sua empresa a ser encontrada com mais facilidade. Melhoramos sua presença online, aumentamos sua visibilidade local e destacamos sua marca nos resultados do Google.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redesigned projects section with large image cards -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Projetos realizados</h2>
+      <p class="section-subtitle">Conheça alguns dos projetos que desenvolvemos com excelência</p>
+      
+      <div class="projects-grid">
+        <div class="project-card-large reveal">
+          <div class="project-image">
+            <img src="assets/imgs/Sobre a L Farias - L Farias Construções - Google Chrome 21_08_2025 11_51_50.png" alt="LFarias Construções">
+          </div>
+          <div class="project-info">
+            <h3>LFarias Construções</h3>
+            <p>Website profissional desenvolvido para a empresa LFarias Construções, com foco em apresentar seus serviços, portfólio e facilitar o contato com clientes.</p>
+            <a href="https://lfarias.netlify.app/" class="btn btn-tertiary">Ver projeto</a>
+          </div>
+        </div>
+
+        <div class="project-card-large reveal">
+          <div class="project-image">
+            <img src="assets/imgs/Vitor - Assistência Técnica de Celulares - Google Chrome 27_10_2025 21_46_18.png" alt="Sistema de Gestão">
+          </div>
+          <div class="project-info">
+            <h3>Vitor Cell </h3>
+            <p>landing page para oficina de celulares </p>
+            <a href="https://vitor-cell.netlify.app/" class="btn btn-tertiary">Ver projeto</a>
+          </div>
+        </div>
+
+        <div class="project-card-large reveal">
+          <div class="project-image">
+            <img src="assets/imgs/app-delivery.jpg" alt="App de Delivery">
+          </div>
+          <div class="project-info">
+            <h3>App de Delivery</h3>
+            <p>Aplicativo mobile para pedidos e entregas com rastreamento em tempo real</p>
+            <a href="paginas/projetos.html#app-delivery" class="btn btn-tertiary">Ver projeto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two buttons as requested: services and all projects -->
+      <div class="section-buttons reveal">
+        <a href="paginas/servicos.html" class="btn btn-primary">Ver serviços feitos</a>
+        <a href="paginas/projetos.html" class="btn btn-secondary">Ver todos os projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minimal footer -->
+  <footer class="footer-minimal">
+    <div class="container">
+      <div class="footer-minimal-content">
+        <div class="footer-minimal-brand">
+          <a href="/" class="footer-minimal-logo">
+            <span class="logo-accent">JV</span>ix
+          </a>
+        </div>
+        
+        <div class="footer-minimal-links">
+          <a href="mailto:contato@jvix.com">contato@jvix.com</a>
+          <span class="footer-minimal-divider">•</span>
+          <a href="https://instagram.com/jvix" target="_blank" rel="noopener">Instagram</a>
+          <span class="footer-minimal-divider">•</span>
+          <a href="https://linkedin.com/company/jvix" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        
+        <div class="footer-minimal-copyright">
+          <p>&copy; 2025 JVix</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
